@@ -9,7 +9,7 @@ let sommaUtente = 0;
 let sommaPc = 0;
 
 // Generare più  numeri random da 1 a 6, sia per il giocatore sia per il computer.
-for ( let i = 0; i < 10; i ++ ) {
+for ( let i = 0; i < 7; i ++ ) {
 
     let numeriUtente = Math.floor(Math.random() * 6 + 1);
     // pusho i numeri estratti nell'array
@@ -34,8 +34,12 @@ console.log(sommaPc);
 if ( sommaUtente > sommaPc ) {
     alert(`L'utente ha vinto!!! il tuo punteggio è ${sommaUtente}`);
 
-} else {
+} else if ( sommaPc > sommaUtente ) {
+    
     alert(`Il PC ha vinto!! il suo punteggio è ${sommaPc}`);
+} else {
+
+    alert("Pareggio!!");
 }
 
 

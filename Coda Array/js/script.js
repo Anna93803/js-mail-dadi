@@ -11,14 +11,8 @@ const ultimiNumeriDaStampare = document.getElementById("ultimi-numeri");
 
 // Stampare a schermo, con un ciclo, gli ultimi 5 elementi dell’array.
 for ( let i = 0; i <= numeri.length; i ++ ) {
-    
+
     //  uso slice per estrarre gli ultimi 5 numeri dell'array
     let ultimiNumeri = numeri.slice(-5);
     ultimiNumeriDaStampare.innerHTML = `Gli ultimi 5 numeri sono i seguenti: ${ultimiNumeri}`;
 }
-
-
-// Extra Bonus
-// Creiamo un array chiedendo all’utente quanti elementi dovrà contenere e generando tanti numeri interi casuali quanti sono gli elementi da inserire.
-// Attenzione #3: quali controlli dobbiamo fare sull’input dell’utente?
-// Super Extra Bonus: chiedere all’utente anche quanti elementi vanno estratti dal fondo dell’array.
